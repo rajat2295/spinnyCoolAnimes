@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  background: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+}
+
+
+
