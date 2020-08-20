@@ -9,7 +9,7 @@ const CardContainer = ({cardList=[]}) => {
             
             {/* iterating the reult list and rendering them into individual cards ==> */}
             {cardList.map(card=>(
-                <Card url={card.url} imageUrl={card.image_url} name={card.title} />
+                <Card key={card.url} url={card.url} imageUrl={card.image_url} name={card.title} />
             ))
 }
     </div>

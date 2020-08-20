@@ -20,6 +20,8 @@ export const getSearchData = ({ query, oldUrl }) => async (dispatch, getState) =
     } else {
         url = `https://api.jikan.moe/v3/search/anime?q=${query}&limit=16&page=${page}`;
         try {
+            dispatch(setDebugData({url:'fetching...'}));
+            dispatch(setSearchData([]));
             const searchData = await fetchSearchData(url, query, page)
             const debugInfo = { ...searchData };
             delete debugInfo.results;

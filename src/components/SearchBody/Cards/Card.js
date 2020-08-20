@@ -5,11 +5,11 @@ import './Cards.css'
 const Card = ({url='',imageUrl='',name=''}) => {
     
     return (
-            <div href={url} class="card">
-                        <div class="card__image">
+            <div href={url} className="card">
+                        <div className="card__image">
                             <img loading="lazy" src={imageUrl} alt={name} />
                         </div>
-                        <div class="card__name">
+                        <div className="card__name">
                             <div><span>{name}</span></div> 
                         </div>
                     </div>

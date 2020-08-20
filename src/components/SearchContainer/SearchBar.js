@@ -7,8 +7,10 @@ const SearchBar = ({onChangeHandler,performSearch}) => {
 
     return (
         <Fragment>
-            <input id="search_query" onChange={(e) => onChangeHandler(e.target.value)} type="text" name="query" placeholder="search for an anime, e.g Naruto" />
-            <Button onClickHandler={performSearch()} customClass={'searchButton'} label="Go"/>
+            <form autoComplete="off" onSubmit={(e)=>{e.preventDefault();performSearch()}} >
+            <input id="search_query" spellCheck="false" onChange={(e) => onChangeHandler(e.target.value)} type="text" name="query" placeholder="search for an anime, e.g Naruto" />
+            <Button onClickHandler={performSearch} customClass={'searchButton'} label="Go"/>
+            </form>
         </Fragment>
     )
 }
