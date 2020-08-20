@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import './DebugInfo.css'
 
+// Component that displayes the debug infor like URL and cached info ==>
 const DebugInfo = ({ data = {} }) => {
     const {
         url, request_cached
@@ -9,8 +10,7 @@ const DebugInfo = ({ data = {} }) => {
         <div class="debug">
             Requesting: <a target="_blank" id="search_query_url" href="javascript:void(null)">{url}</a><br />
     Request Cached: <span id="request_cached" style={{ color: request_cached ? '#5DAE28' : '#CE3C2D' }}>{request_cached ? 'True' : 'False'}</span><br />
-            {/* Time taken: <span id="request_time_taken">-</span> */}
         </div>
     )
 }
-export default DebugInfo;
+export default memo(DebugInfo);

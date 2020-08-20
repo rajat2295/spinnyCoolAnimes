@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import './Cards.css'
 
+// Individual card component  with image name and url ==>
 const Card = ({url='',imageUrl='',name=''}) => {
     
     return (
@@ -14,4 +15,4 @@ const Card = ({url='',imageUrl='',name=''}) => {
                     </div>
     )
 }
-export default Card;
+export default memo(Card);

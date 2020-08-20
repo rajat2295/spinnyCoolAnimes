@@ -1,6 +1,7 @@
 const initState = {
     page: 1,
 }
+// Root Reducer for the application ==>
 const rootReducer = (state = initState, action) => {
     const { type, payload } = action;
     switch (type) {

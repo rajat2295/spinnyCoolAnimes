@@ -1,3 +1,5 @@
+
+// API to get search data from the Db ==>
 export const fetchSearchData = (url,query='',page='1') => {
 	let resData = fetch(url, {
 		method: 'GET'

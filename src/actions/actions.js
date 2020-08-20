@@ -1,5 +1,7 @@
 import { fetchSearchData } from "../utilities/api/getListingApi";
 
+// get Search Data from api using query or existing url ==>
+
 export const getSearchData = ({ query, oldUrl }) => async (dispatch, getState) => {
     let url = ''
     let page=1
@@ -29,19 +31,21 @@ export const getSearchData = ({ query, oldUrl }) => async (dispatch, getState) =
             console.log('error')
         }
     }
-
-    
 }
 
+// Action dispatcher for setting search result data =>
 export const setSearchData = data => ({
     type: 'SET_SEARCH_RESULT_DATA',
     payload: [...data]
 });
 
+// Action dispatcher for setting search Debug data =>
 export const setDebugData = data => ({
     type: 'SET_SEARCH_DEBUG_DATA',
     payload: { ...data }
 });
+
+// Action dispatcher for setting current page Number data =>
 export const setPageNo = data => ({
     type: 'SET_SEARCH_PAGE',
     payload: { ...data }
