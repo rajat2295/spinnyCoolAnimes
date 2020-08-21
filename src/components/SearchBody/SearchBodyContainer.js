@@ -3,7 +3,7 @@ import CardContainer from './Cards/CardContainer'
 import './SearchBodyContainer.css'
 import { useSelector, useDispatch } from 'react-redux'
 import Button from '../Genric/Button/Button'
-import { setPageNo, getSearchData } from '../../actions/actions'
+import {  getSearchData } from '../../actions/actions'
 
 // Body container Component =>
 const SearchBodyContainer = () => {
