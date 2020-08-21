@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1712fd34da2ef61431abe71c622f8828",
+    "revision": "48641778132927a3fea10919112bf055",
     "url": "/spinnyCoolAnimes/index.html"
   },
   {
-    "revision": "8d0d5a9fbee0353a66ed",
+    "revision": "a1d2d2dd6c7d53e29622",
     "url": "/spinnyCoolAnimes/static/css/main.327eaab9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spinnyCoolAnimes/static/js/2.7cf6869d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8d0d5a9fbee0353a66ed",
-    "url": "/spinnyCoolAnimes/static/js/main.3a36adf7.chunk.js"
+    "revision": "a1d2d2dd6c7d53e29622",
+    "url": "/spinnyCoolAnimes/static/js/main.81fe957c.chunk.js"
   },
   {
     "revision": "ca5409ef23e0d02eca61",
