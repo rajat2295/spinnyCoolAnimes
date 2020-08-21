@@ -14,11 +14,10 @@ const SearchBodyContainer = () => {
     // get last Page of search and url from the store ==>
     const { last_page = '', url } = useSelector(state => state.debugData ? state.debugData : {});
     const page = useSelector(state => state.page ? state.page : 1);
-
+    const disablePagination = useSelector (state=>state.disablePagination?state.disablePagination:false)
     // function to add more cards on clicking view more if not the last page ===>
     const addMoreCards = () => {
         if (page !== last_page)
-            dispatch(setPageNo(Number(page) + 1))
         dispatch(getSearchData({ oldUrl: url }))
 
     }
@@ -30,7 +29,7 @@ const SearchBodyContainer = () => {
                 </div>
 
                 {/* show view more button only when not the last page of the list ==> */}
-                    {page !== last_page && <Button onClickHandler={addMoreCards} customClass={'transWhite'} label='View More' />
+                    {page !== last_page && <Button disabled={disablePagination} onClickHandler={addMoreCards} customClass={'transWhite'} label='View More' />
                     }
                 </Fragment>
             }

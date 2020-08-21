@@ -11,6 +11,10 @@ const rootReducer = (state = initState, action) => {
             return { ...state, debugData: payload };
         case 'SET_SEARCH_PAGE':
             return { ...state, page: payload };
+        case 'SET_SEARCH_QUERY':
+            return { ...state, query: payload };
+        case 'TOGGLE_PAGINATION':
+            return { ...state, disablePagination: payload };
         default:
             return state;
     }

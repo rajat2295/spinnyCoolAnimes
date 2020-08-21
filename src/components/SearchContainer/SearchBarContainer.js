@@ -9,7 +9,8 @@ import SearchBar from './SearchBar';
 // Search Bar Container Containg input field and debug info ==>
 
 const SearchBarContainer = () => {
-    
+
+    const disableButton = useSelector (state=>state.disablePagination?state.disablePagination:false)
     const dispatch = useDispatch();
     // get debug dtata from store ===> 
     const {
@@ -32,7 +33,7 @@ const SearchBarContainer = () => {
     // Debug info appears only when the API provides it ==>
     return (
         <div className='search'>
-            <SearchBar onChangeHandler ={onChangeHandler} performSearch ={performSearch} />
+            <SearchBar disabled={disableButton} onChangeHandler ={onChangeHandler} performSearch ={performSearch} />
             {Object.keys(debugData).length >0 && 
                 <DebugInfo data={debugData} />
             }
