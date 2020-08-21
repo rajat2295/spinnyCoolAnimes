@@ -5,7 +5,7 @@ import './Cards.css'
 const Card = ({url='',imageUrl='',name=''}) => {
     
     return (
-            <div href={url} className="card">
+            <div onClick ={(e)=>{e.stopPropagation();window.open(url,'_blank')}} className="card">
                         <div className="card__image">
                             <img style={{backgroundImage:`url(${process.env.PUBLIC_URL}/images/tenor.gif)`}} loading="lazy" src={imageUrl} alt={name} />
                         </div>
