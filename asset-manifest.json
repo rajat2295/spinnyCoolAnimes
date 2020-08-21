@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/spinnyCoolAnimes/static/css/main.d87728e7.chunk.css",
-    "main.js": "/spinnyCoolAnimes/static/js/main.7f73d419.chunk.js",
-    "main.js.map": "/spinnyCoolAnimes/static/js/main.7f73d419.chunk.js.map",
+    "main.css": "/spinnyCoolAnimes/static/css/main.327eaab9.chunk.css",
+    "main.js": "/spinnyCoolAnimes/static/js/main.3a36adf7.chunk.js",
+    "main.js.map": "/spinnyCoolAnimes/static/js/main.3a36adf7.chunk.js.map",
     "runtime-main.js": "/spinnyCoolAnimes/static/js/runtime-main.e785e466.js",
     "runtime-main.js.map": "/spinnyCoolAnimes/static/js/runtime-main.e785e466.js.map",
     "static/js/2.7cf6869d.chunk.js": "/spinnyCoolAnimes/static/js/2.7cf6869d.chunk.js",
     "static/js/2.7cf6869d.chunk.js.map": "/spinnyCoolAnimes/static/js/2.7cf6869d.chunk.js.map",
     "index.html": "/spinnyCoolAnimes/index.html",
-    "precache-manifest.212d50b67d0875eb5640ca78fb61da83.js": "/spinnyCoolAnimes/precache-manifest.212d50b67d0875eb5640ca78fb61da83.js",
+    "precache-manifest.34d686156dd1d52346e08883532dd18a.js": "/spinnyCoolAnimes/precache-manifest.34d686156dd1d52346e08883532dd18a.js",
     "service-worker.js": "/spinnyCoolAnimes/service-worker.js",
-    "static/css/main.d87728e7.chunk.css.map": "/spinnyCoolAnimes/static/css/main.d87728e7.chunk.css.map",
+    "static/css/main.327eaab9.chunk.css.map": "/spinnyCoolAnimes/static/css/main.327eaab9.chunk.css.map",
     "static/js/2.7cf6869d.chunk.js.LICENSE.txt": "/spinnyCoolAnimes/static/js/2.7cf6869d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e785e466.js",
     "static/js/2.7cf6869d.chunk.js",
-    "static/css/main.d87728e7.chunk.css",
-    "static/js/main.7f73d419.chunk.js"
+    "static/css/main.327eaab9.chunk.css",
+    "static/js/main.3a36adf7.chunk.js"
   ]
 }
