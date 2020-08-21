@@ -12,9 +12,7 @@ const CardContainer = ({ cardList = [] }) => {
                 if (card && card.url)
                     return (<Card key={card.url} url={card.url} imageUrl={card.image_url} name={card.title} />
                     )
-                else {
-                    return
-                }
+                return null
             })
             }
         </div>
